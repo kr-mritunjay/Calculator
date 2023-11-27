@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="background">
+    <form class="calculator" name="calculator">
+      <div class="screen">
+        <input type="text" name="screen" readonly placeholder="0" class="screen">
+      </div>
+      <div class="buttons">
+        <input type="button" value="AC" onclick="ClearALL()" id="element" name="" style="color: yellow;"></input>
+        <input type="button" value="C" onclick="Clear()" id="element" style="color: yellow;"></input>
+        <input type="button" value="%" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="/" onclick="displayvalue(this)" id="element"></input>
+      </div>
+      <div class="buttons">
+        <input type="button" value="7" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="8" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="9" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="*" onclick="displayvalue(this)" id="element"></input>
+      </div>
+      <div class="buttons">
+        <input type="button" value="4" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="5" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="6" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="-" onclick="displayvalue(this)" id="element"></input>
+      </div>
+      <div class="buttons">
+        <input type="button" value="1" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="2" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="3" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="+" onclick="displayvalue(this)" id="element"></input>
+      </div>
+      <div class="buttons">
+        <input type="button" value="00" onclick="displayvalue(this)" id="element"
+          style="border-bottom-left-radius: 40px;"></input>
+        <input type="button" value="0" onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="." onclick="displayvalue(this)" id="element"></input>
+        <input type="button" value="=" onclick="Calculate()" id="element"
+          style="border-bottom-right-radius: 40px; color: yellow; font-size: 45px;"></input>
+      </div>
+  </div>
+  </div>
+</body>
+
+</html>
